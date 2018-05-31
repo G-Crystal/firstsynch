@@ -1,0 +1,227 @@
+/* ==== Google font ==== */
+@import url('http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Montserrat:700|Merriweather:400italic');
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato',sans-serif;
+	font-weight: 300;
+    color: #666;
+    background-color: #fff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 30px;
+    text-transform: uppercase;
+    font-family: 'Lato',sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* webkit solution */
+::-webkit-input-placeholder { text-align:right; }
+/* mozilla solution */
+input:-moz-placeholder { text-align:right; }
+
+.sidebar-left {
+    height: 100%;
+    font-size: 11px;
+    float: left;
+    margin: 0 22px;
+}
+
+.sidebar-left .tab .tab-title {
+    color: #00B58E;
+    padding: 10px 0;
+    margin: 0;    
+}
+
+.sidebar-left .tab .tab-title span {
+    vertical-align: middle;
+    color: #00B58E;
+    font-weight: 900;
+}
+
+.sidebar-left .tab .tab-title i {
+    margin-left: 8px;
+    font-size: 9px;
+    vertical-align: middle;
+    color: #00B58E;
+}
+
+.sidebar-left .tab .tab-content {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-left .tab .tab-content .tab-item {
+    position: relative;
+    width: 180px;
+    height: 100px;
+    margin-bottom: 5px;
+    background: #2cc0a0;
+    padding: 5px 5px 7px 7px;
+    background-color: #f2f2f2;    
+    background-image: linear-gradient(to right, rgba(44, 192, 160, 0.18) 0%, rgba(138, 225, 206, 0.18) 100%);
+}
+
+.sidebar-left .tab .tab-content .tab-item.active {
+    background-image: linear-gradient(to right, #2cc0a0 0%, #8ae1ce 100%);    
+}
+
+
+
+.sidebar-left .tab .tab-content .tab-item:after,
+.sidebar-left .tab .tab-content .tab-item .num-field:after,
+.sidebar-left .tab .tab-content .tab-item .text-field:after {
+    display: table;
+    content: '';
+    clear: both;
+}
+
+.sidebar-left .tab .tab-content .tab-item .num-field {
+    padding: 3px 0;
+}
+
+.sidebar-left .tab .tab-content .tab-item .num-field span {
+    display: block;
+    float: right;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: #ffffff;
+    line-height: 24px;
+}
+
+.sidebar-left .tab .tab-content .tab-item .text-field {
+    margin-top: 42px;
+}
+
+.sidebar-left .tab .tab-content .tab-item .text-field span {
+    font-weight: 900;
+}
+
+.sidebar-left .tab .tab-content .tab-item .text-field span:first-child {
+    position: absolute;
+    bottom: 10px;    
+    color: #0d0d0d;
+}
+
+.sidebar-left .tab .tab-content .tab-item .text-field span:last-child {
+    margin-right: 5px;    
+}
+
+.sidebar-left .tab .tab-content .tab-item.active .text-field span:first-child {
+    color: #ffffff;
+} 
+
+.tab > ul.sidenav-collapse {
+    display: none;
+}
+.tab > ul.sidenav-expand {
+    display: block;
+}
+.menu-label-span {
+    margin-right: 40px;
+}
+
+/* Header Style */
+.header-div {
+	height: 100px;
+	margin: 28px 28px 0;
+}
+.navbar-nav>li>a {
+    padding: 5px 10px;
+    line-height: 40px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #0D0D0D;
+    font-size: 15px;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 5px;
+}
+/* Body Style */
+
+.main-div {
+	margin-left: 200px;
+}
+.main-content-div {
+	padding: 30px 30px 10px;
+    max-width: 500px;
+}
+
+.sub-title-div {
+    font-family: 'Lato',sans-serif;
+	font-weight: 900;
+	font-size: 36px;
+	color: #0D0D0D;
+	letter-spacing: -1px;
+	text-transform: uppercase;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.description-div {
+	opacity: 0.3;
+    font-family: 'Lato',sans-serif;
+	font-weight: 600;
+	font-size: 11px;
+	color: #0D0D0D;
+	letter-spacing: -0.22px;
+	line-height: 22px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+}
+.control-div {
+	opacity: 0.7;
+    border-bottom: 2px solid #0d0d0d;
+	margin-bottom: 30px;
+}
+.transparent-input {
+	width: 100%;
+	border: transparent;
+	height: 30px;
+}
+.a-button {
+    border-radius: 20px;
+    line-height: 25px;
+    background-color: transparent;
+    color: #0D0D0D;
+    font-weight: 600;
+    font-size: 11px;
+    border: 1px solid;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    letter-spacing: 0.04em;
+    padding: 6px 12px;
+    margin-left: 20px;
+    text-decoration: none;
+    height: 40px;
+}
+.inline-cancel-button {
+    background-color: #303030;
+    color: #FFFFFF;
+}
+a:hover {
+	text-decoration: none;
+    cursor: pointer;
+}
